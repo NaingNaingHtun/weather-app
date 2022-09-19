@@ -76,15 +76,13 @@ function App() {
         backgroundImage: "linear-gradient(135deg, #599bc1 0%, #6165b7 100%)",
       }}
     >
-      <div className="max-w-[1080px] mx-auto my-[20px] p-4">
-        <div className="flex gap-4">
+      <div className="max-w-[1080px] mx-auto my-[20px] p-4 z-[999]">
+        <div className="flex gap-4 ">
           <Search handleSearchChange={handleOnSearchChange} />
-          <div>
-            <TemperatureUnits
-              temperatureUnit={temperatureUnit}
-              setTemperatureUnit={setTemperatureUnit}
-            />
-          </div>
+          <TemperatureUnits
+            temperatureUnit={temperatureUnit}
+            setTemperatureUnit={setTemperatureUnit}
+          />
         </div>
       </div>
       <div className="mx-auto my-[20px] max-w-[1080px]">

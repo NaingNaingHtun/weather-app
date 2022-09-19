@@ -6,7 +6,7 @@ export default function TemperatureUnits({
 }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="relative py-1 px-2 glass-effect rounded-md z-20">
+    <div className="relative py-1 px-2 glass-effect rounded-md z-[999]">
       <div
         onClick={() => setOpen(true)}
         className="grid place-content-center w-5 h-5s cursor-pointer text-white text-xl"
